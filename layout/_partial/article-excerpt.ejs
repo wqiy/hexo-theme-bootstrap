@@ -1,0 +1,7 @@
+<article class="blog-post">
+  <h2 class="blog-post-title mb-1 fs-2"><%- item.title %></h2>
+  <p class="blog-post-meta"><%- date(item.date, 'YYYY/M/D') %>, by <%- item.author  %> </a></p>
+  <p><%- item.excerpt  %></p>
+  <a class="btn btn-outline-secondary rounded-pill" href="<%- config.root %><%- item.path %>" ><%= theme.excerpt_link %></a>    
+</article>
+

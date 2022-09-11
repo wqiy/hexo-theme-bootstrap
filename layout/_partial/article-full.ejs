@@ -1,0 +1,18 @@
+<div class="col-md-3 border-end">
+  <%- partial('_partial/toc.ejs') %> 
+</div>
+<div class="col-md-9">
+  <article class="blog-post p-4 p-md-5 mb-4 rounded text-bg-light">
+    <h2 class="blog-post-title mb-1 fs-2"><%- item.title %></h2>
+    <p class="blog-post-meta"><%- date(item.date, 'YYYY/M/D') %>, by <a href="#"><%- item.author %></a></p>
+    <p><%- item.content %></p>
+    <div class="article-meta text-secondary">
+      <p>标签：<%- partial('_partial/article-tags.ejs') %></p>
+      <p>分类：<%- partial('_partial/article-categories.ejs') %> </p>
+    </div>
+    <div class="copyright">
+      <%- partial('_partial/copyright.ejs') %>
+    </div>
+  </article>
+</div> 
+
